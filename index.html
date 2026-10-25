@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Interactive Audio Player!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="content">
+  <div class="left-col">
+    <h1>HOME<br>TOWN<br><span>MEXICO</span></h1>
+  </div>
+
+
+  <img src="Images/headphones.png" class="headphone" alt="Headphones">
+
+
+  <div class="right-col">
+    <p>Click to listen</p>
+    <img src="Images/playButton.png" id="icon" class="play" alt="Play/Pause">
+  </div>
+</div>
+
+
+<audio id="music">
+  <source src="happyLatin.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  let music = document.getElementById("music");
+  let icon = document.getElementById("icon");
+
+  icon.onclick = function() {
+    if (music.paused) {
+      music.play();
+      icon.src = "Images/pauseButton.webp";
+    } else {
+      music.pause();
+      icon.src = "Images/playButton.png"
+    }
+  }
+</script>
+
+</body>
+</html>

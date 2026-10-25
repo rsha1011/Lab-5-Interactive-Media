@@ -1,0 +1,66 @@
+body {
+    background: url(Images/background.avif)no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+
+.left-col {
+  margin-left: 6%;
+  float: left;
+}
+
+.left-col h1 {
+  font-size: 90px;
+  color: #fff;
+  line-height: 120px;
+}
+
+.left-col span {
+  color: #f75023;
+}
+
+
+.headphone {
+  width: 350px;
+  margin-left: 18px;
+  transition: 0.3s ease;
+}
+
+.headphone:hover {
+  transform: scale(1.05);
+}
+
+
+.right-col {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-right: 2%;
+  padding: 15px 40px;
+  border-radius: 2em;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.right-col p {
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.play {
+  max-width: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.play:hover {
+  transform: scale(1.2);
+}
